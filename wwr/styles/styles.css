@@ -7,6 +7,9 @@
 #logo-link{
     padding-top: 5px;
 }
+nav{
+    text-align: center;
+}
 nav a{
     text-align: center;
     color: white;
