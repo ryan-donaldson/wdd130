@@ -193,7 +193,54 @@ h4{
     grid-column: 6/10;
     grid-row: 6/7;
     box-shadow: 5px 5px 10px gray;
-}@media screen and (max-width: 900px) {
+}
+    /* Start CSS for Rivers Page */
+#river-box{
+    text-align: center;
+}
+.sub-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    row-gap: 50px;
+    max-width: 1600px;
+    margin: auto;
+}
+.salmon{
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+.sal-info{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    text-align: right;
+}
+.green{
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+.green-info{
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+.grand-canyon{
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+.grand-info{
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+
+
+
+
+
+
+
+
+/* Don't put anything past here!*/
+@media screen and (max-width: 900px) {
     #hero, .home-grid {
         display: block;
         height: auto;
