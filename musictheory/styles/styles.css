@@ -1,0 +1,197 @@
+@import url("https://coolors.co/aaa9ad-fccd12-c72c48-094d92-81F499");
+
+#content{
+    margin: 0 auto;
+}
+
+header{
+    background-color: #AAA9AD;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    max-height: 150px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    grid-column: 1/6;
+}
+
+nav a:hover{
+    background-color: #C72C48;
+}
+
+nav a{
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    padding: 35px;
+    font-size: x-large;
+}
+.link1, .link2, .logo, .link3, .link4{
+    justify-self: center;
+    align-self: center;
+}
+
+.logo{
+    max-height: 120px;
+    justify-self: center;
+    align-self: center;
+    border: solid 6px #AAA9AD;
+}
+
+#welcome-msg{
+    margin: auto;
+    text-align: center;
+    width: 500px;
+    font-size: large;
+}
+
+#welcome-msg h4{
+    padding-bottom: 20px;
+}
+
+.home-title{
+    border: double 4px #FCCD12;
+}
+
+#home-info{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+}
+
+.staff-img{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    max-height: 400px;
+    padding: 20px;
+    margin: 0 auto;
+    border: solid 10px #094D92;
+    box-shadow: -1em -1em 5px #AAA9AD;
+    margin-bottom: 50px;
+}
+
+.notes-img{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    max-height: 400px;
+    margin: 0 auto;
+    margin-top: 50px;
+    border: solid 10px #094D92;
+    box-shadow: 1em 1em 5px #AAA9AD;
+}
+
+.hc1{
+    grid-column: 2/3;
+    margin: 0 auto;
+    text-align: right;
+    text-shadow: 2.5px 2.5px black;
+    color: white;
+    padding: 100px 50px 100px 50px;
+    background-color: #C72C48;
+    background-size: 90%;
+    box-shadow: 0 -5px 3px -3px black, 0 5px 3px -3px black;
+}
+
+.hc2{
+    grid-row: 2/3;
+    margin: 0 auto;
+    text-shadow: 2.5px 2.5px black;
+    color: white;
+    padding: 100px 50px 100px 50px;
+    background-color: #C72C48;
+    box-shadow: 0 -5px 3px -3px black, 0 5px 3px -3px black;
+}
+
+footer{
+    background-color: #094D92;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    max-height: 150px;
+    align-items: center;
+    margin-top: 100px;
+    text-align: center;
+}    
+
+footer a:hover{
+    background-color: #6f7364;
+}
+
+footer a{
+    color: white;
+    text-decoration: none;
+    padding: 35px;
+    font-size: x-large;
+}
+
+.copyr{
+    grid-column: 1/2;
+}
+footer p:nth-of-type(1){
+    color: white;
+    text-decoration: none;
+    padding-left: 35px;
+    font-size: x-large;
+}
+.splan{
+    grid-column: 2/3;
+}
+
+footer .logo{
+    grid-column: 3/4;
+}
+
+.hlink{
+    grid-column: 4/5;
+}
+
+.contactl{
+    grid-column: 5/6;
+}
+
+
+
+
+/* Don't put anything past here!*/
+@media screen and (max-width: 900px) {
+    #hero, .home-grid {
+        display: block;
+        height: auto;
+    }
+    nav, footer {
+        flex-direction: column;
+    }
+    nav a {
+        display: block;
+        padding: 15px;
+    }
+    #hero {
+        margin-top: 0;
+    }
+    #hero-msg {
+        margin-top: 0;
+    }
+    #hero-msg h4 {
+        display: none;
+    }
+    .home-title {
+        font-size: 25px;
+        color: #6f7364;
+    }
+    .rivers-card, .camping-card, .rapids-card { 
+        margin: 50px auto;
+        width: 60%;
+    }
+    #background {
+        display: none;
+    }
+    .mountains, .msg {
+        width: 80%;
+        display: block;
+        margin: 0 auto;
+    }
+    footer {
+        margin-top: 25px;
+    }
+}
