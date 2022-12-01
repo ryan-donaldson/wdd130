@@ -8,6 +8,22 @@
     <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <script>
+        let mybutton = document.getElementById("myBtn");
+        window.onscroll = function() {scrollFucntion()};
+        function scrollFucntion() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }    
+        }
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
     <div id="content">
         <header>
             <nav>
@@ -26,15 +42,15 @@
             <img class="staff-img" src="images/zTX4z9KTB.jpg" alt="blank sheet music staff">
                 <div class="hc1">
                     <h2>
-                        The image to the left shows what is called the music staff. The symbol on the upper set of lines is called the treble clef. The symbol below is called the bass clef. These clefs tell us where the notes written on the staff are
+                        The image to the left shows what is called the music staff. <br> The symbol on the upper set of lines is called the treble clef. <br> The symbol below is called the bass clef. <br> These clefs tell us where the notes written on the staff are
                         compared to middle C. Middle C is the C in the middle of a piano keyboard. Notes above middle C are written on the upper portion of the staff with the treble clef, and the notes below middle C are written on the lower portion of the staff with the bass clef. Music notes
                         on the staff are written either on the lines or in the spaces; this helps us know which note is which. 
                     </h2>
                 </div>    
                 <div class="hc2">
                     <h2>
-                        The image on the right shows notes written on the staff. In music, notes are named using the letters A through G. As can be seen, once all the letters are used they repeat. The distances between notes are referred to as intervals. The distance between two notes of the same
-                        name is known as an octave. Remeber middle C? That is the C on the staff with the line through it. That line is called a ledger line. We use ledger lines to help us keep track of notes not written on any of the five lines in the main staff.
+                        The image on the right shows notes written on the staff. <br> In music, notes are named using the letters A through G. <br> As can be seen, once all the letters are used they repeat. <br> The distances between notes are referred to as intervals. <br> The distance between two notes of the same
+                        name is known as an octave. Remember middle C? That is the C on the staff with the line through it. That line is called a ledger line. <br> We use ledger lines to help us keep track of notes not written on any of the five lines or spaces in the main staff.
                     </h2>
                 </div>
             <img class="notes-img" src="images/Notes%20on%20the%20Staff.png" alt="music notes on staff">
