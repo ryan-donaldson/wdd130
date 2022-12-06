@@ -213,7 +213,7 @@ footer .logo{
     text-align: left;
     text-shadow: 2.5px 2.5px black;
     color: white;
-    padding: 25px 50px 100px 50px;
+    padding: 0px 50px 100px 50px;
     background-color: #094D92;
     background-size: 90%;
     box-shadow: 0 -5px 3px -3px black, 0 5px 3px -3px black;
@@ -227,7 +227,7 @@ footer .logo{
     text-align: right;
     text-shadow: 2.5px 2.5px black;
     color: white;
-    padding: 25px 50px 100px 50px;
+    padding: 0px 50px 100px 50px;
     background-color: #094D92;
     box-shadow: 0 -5px 3px -3px black, 0 5px 3px -3px black;
     line-height: 30px;
@@ -256,7 +256,7 @@ footer .logo{
     grid-template-rows: 1fr 1fr;
 }
 
-.choir{
+.music-book{
     grid-column: 1/2;
     grid-row: 1/2;
     max-height: 800px;
@@ -268,7 +268,7 @@ footer .logo{
     box-shadow: -1em -1em 5px #AAA9AD;
 }
 
-.music-book{
+.choir{
     grid-column: 3/4;
     grid-row: 2/3;
     max-height: 800px;
